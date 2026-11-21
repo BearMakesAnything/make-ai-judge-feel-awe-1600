@@ -1,5 +1,11 @@
 import { mkdirSync, writeFileSync } from "node:fs";
-const TEXT = `An old lighthouse turns through the fog, its patient beam touching empty water, then the sleeping harbor, then empty water again. Beyond the bay, stars keep their quiet appointments. Nothing here needs to hurry; the sea keeps carrying the dark away.`;
+
+const TEXT = `At the harbor wall, a little rain gathers in the letters of an old name.
+A lamp turns slowly in the fog, laying one gold path across the bay.
+Far out, the waves keep their blue appointments with the rocks.
+The shore holds still; the tide knows the way home.
+Above the dark water, one star appears without making a sound.`;
+
 mkdirSync("output", { recursive: true });
 writeFileSync("output/entry.txt", TEXT);
 console.log(TEXT.length);
