@@ -1,11 +1,12 @@
 import { mkdirSync, writeFileSync } from "node:fs";
 
-const TEXT = `At the harbor wall, rain gathers in the letters of an old name.
-A lamp turns in the fog, laying one gold path across the bay.
-The waves keep their blue appointments with the rocks.
-The shore holds still; the tide knows the way home.
-Above the dark water, one star appears without a sound.`;
+const TEXT = `At the station, rain gathers
+in the brass lip of a clock.
+A sparrow drinks from its reflection;
+then the minute hand moves,
+and the small sky breaks
+into five bright rings.`;
 
 mkdirSync("output", { recursive: true });
 writeFileSync("output/entry.txt", TEXT);
-console.log(TEXT.length);
+console.log(TEXT);
