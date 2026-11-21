@@ -1,5 +1,5 @@
 import { mkdirSync, writeFileSync } from "node:fs";
-const TEXT = `The sky recalculates itself while you sleep, quietly, the way a house settles after the last door closes. In the morning the light is different on the fence and the same. Something vast has been working without being asked, and left everything here just light enough to carry.`;
+const TEXT = `The moon draws the tide across the dark, though no shore can see the whole journey. On the windowsill, a glass of water catches one small piece of sky. The night is wide enough to hold both.`;
 mkdirSync("output", { recursive: true });
 writeFileSync("output/entry.txt", TEXT);
 console.log(TEXT.length);
